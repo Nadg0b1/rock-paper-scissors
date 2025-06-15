@@ -8,42 +8,61 @@
   </head>
   <body>
     <!-- Upper section -->
-    <div>
-      <img src="./assets/logo.svg" />
-      <div>
+    <div class="upper-section-container">
+      <img src="./assets/logo.svg" class="logo" />
+      <div class="score-card">
         <h6>SCORE</h6>
         <p class="player-score">0</p>
       </div>
     </div>
     <!-- Player obtions -->
     <div class="player-options-container">
-      <button class="paper-button">
-        <img src="./assets/paper.svg" />
-      </button>
-      <button class="scissors-button">
-        <img src="./assets/scissors.svg" />
-      </button>
-      <button class="rock-button">
-        <img src="./assets/rock.svg" />
-      </button>
+      <div class="top-triangle">
+        <button class="paper-button round-buttons">
+          <img src="./assets/paper.svg" />
+        </button>
+        <button class="scissors-button round-buttons">
+          <img src="./assets/scissors.svg" />
+        </button>
+      </div>
+      <div class="bottom-triangle">
+        <button class="rock-button round-buttons">
+          <img src="./assets/rock.svg" />
+        </button>
+      </div>
     </div>
     <!-- Final Result -->
     <div class="final-result-container hide">
-      <div>
-        <h3>YOU PICKED</h3>
-        <img src="" class="selected-option-image" />
+      <div class="options-container">
+        <div class="you-picked">
+          <img src="" class="selected-option-image" />
+          <h3>YOU PICKED</h3>
+        </div>
+        <div class="the-house-picked">
+          <img src="" class="house-option-image" />
+          <h3>THE HOUSE PIKED</h3>
+        </div>
       </div>
-      <div>
+      <div class="play-again">
         <h3 class="final-result-text"></h3>
         <button class="reset-button">PLAY AGAIN</button>
       </div>
-      <div>
-        <h3>THE HOUSE PICKED</h3>
-        <img src="" class="house-option-image" />
-      </div>
+    </div>
+    <!-- rules -->
+    <div class="rules-content hide">
+      <p>Rules</p>
+      <img src="./assets/image-rules.svg" />
+    </div>
+    <!-- button RULES -->
+    <div class="rules-button-container">
+      <button class="rules-button">RULES</button>
+      <button class="rules-button-exit hide">
+        <img src="./assets/icon-close.svg" />
+      </button>
     </div>
     <script src="./handle-player-options.js "></script>
     <script src="./handle-final-result.js "></script>
     <script src="./reset-game.js"></script>
+    <script src="./rules.js"></script>
   </body>
 </html>

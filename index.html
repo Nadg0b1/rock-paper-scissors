@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Upper section -->
+    <div>
+      <img src="./assets/logo.svg" />
+      <div>
+        <h6>SCORE</h6>
+        <p class="player-score">0</p>
+      </div>
+    </div>
+    <!-- Player obtions -->
+    <div class="player-options-container">
+      <button class="paper-button">
+        <img src="./assets/paper.svg" />
+      </button>
+      <button class="scissors-button">
+        <img src="./assets/scissors.svg" />
+      </button>
+      <button class="rock-button">
+        <img src="./assets/rock.svg" />
+      </button>
+    </div>
+    <!-- Final Result -->
+    <div class="final-result-container hide">
+      <div>
+        <h3>YOU PICKED</h3>
+        <img src="" class="selected-option-image" />
+      </div>
+      <div>
+        <h3 class="final-result-text"></h3>
+        <button class="reset-button">PLAY AGAIN</button>
+      </div>
+      <div>
+        <h3>THE HOUSE PICKED</h3>
+        <img src="" class="house-option-image" />
+      </div>
+    </div>
+    <script src="./handle-player-options.js "></script>
+    <script src="./handle-final-result.js "></script>
+    <script src="./reset-game.js"></script>
+  </body>
+</html>

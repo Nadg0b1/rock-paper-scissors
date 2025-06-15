@@ -1,0 +1,8 @@
+.hide {
+  display: none !important;
+}
+
+.final-result-container {
+  display: flex;
+  gap: 48px;
+}
